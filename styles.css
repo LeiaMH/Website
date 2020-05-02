@@ -5,10 +5,11 @@ body{
    }
 
 header h1.name{
-color: rgb(30, 229, 233);
+color: rgb(30, 229, 233, 0.7);
 font-family: Arial, serif;
 font-weight: 100px;
-font-size: 200px;
+font-size: 100px;
+text-shadow: 10px 10px 10px rgb(0, 0, 5);
 }
 
 header{
@@ -20,15 +21,16 @@ header h1{
 }
 
 header h2.jobs{
-color: rgb(30, 229, 233);
-font-family: Arial;
+color: rgb(30, 229, 233, 0.7);
+font-family: Arial, serif;
 font-weight: 20px;
-font-size: 30px;
+font-size: 15px;
 letter-spacing: 0.4em;
+text-shadow: 10px 10px 10px rgb(0, 0, 5);
 
 }
 header h2{
     position: relative;
-    left: 50px;
-    bottom: 60px;
+    left: 30px;
+    bottom: 25px;
 }
