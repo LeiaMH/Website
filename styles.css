@@ -4,14 +4,16 @@ body{
     background-color: rgb(10, 10, 65);
    }
 
-header h1.name{
+header h1 button{
 color: rgb(30, 229, 233, 0.7);
 font-family: 'Jost', Arial, serif;
 font-size: 80px;
 font-weight: 300;
 text-shadow: 10px 10px 10px rgb(0, 0, 5);
+background-color: rgb(10, 10, 65);
+border: none;
 }
-h1.name:hover{
+.onstyle{
     color: rgb(30, 229, 233);
     text-shadow: 4px 4px 10px rgb(30, 229, 233);
 }
@@ -28,7 +30,7 @@ header h1{
 header h2.jobs{
 color: rgb(30, 229, 233, 0.7);
 font-family: 'Jost',Arial, serif;
-font-size: 15px;
+font-size: 18px;
 font-weight: 300;
 letter-spacing: 0.3em;
 text-shadow: 10px 10px 10px rgb(0, 0, 5);
@@ -36,7 +38,7 @@ text-shadow: 10px 10px 10px rgb(0, 0, 5);
 }
 header h2{
     position: relative;
-    left: 5px;
+    left: 50px;
     bottom: 25px;
 }
 .navbar{
