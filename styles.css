@@ -12,6 +12,7 @@ font-weight: 300;
 text-shadow: 10px 10px 10px rgb(0, 0, 5);
 background-color: rgb(10, 10, 65);
 border: none;
+cursor: help;
 }
 .onstyle{
     color: rgb(30, 229, 233);
@@ -19,7 +20,7 @@ border: none;
 }
 
 header{
-    display: inline-block;
+    display: fixed;
     padding-left: 20px;
 }
 header h1{
@@ -38,6 +39,7 @@ text-shadow: 10px 10px 10px rgb(0, 0, 5);
 }
 header h2{
     position: relative;
+    display: inline-block;
     left: 50px;
     bottom: 25px;
 }
@@ -48,9 +50,17 @@ header h2{
     top: 0;
     right: 0;
     height: 100%;
-
 }
 ul{
+    list-style: none;
+    padding-left: 5px;
+}
+
+ul li{
+    padding: 20px 0 0 0;
+}
+
+ul li a{
     color: rgb(30, 229, 233, 0.7);
     font-family: 'Jost',Arial, serif;
     font-size: 25px;
@@ -58,14 +68,35 @@ ul{
     list-style: none;
     padding-left: 5px;
     text-shadow: 10px 10px 10px rgb(0, 0, 5);
-    
-}
-ul li{
-    padding: 20px;
     text-decoration: none;
 }
 
 a:hover{
     color: rgb(30, 229, 233);
     text-shadow: 4px 4px 5px rgb(30, 229, 233);
+}
+
+section.main-content{
+   display: inline-block;
+   width: 60%;
+   margin: 10vh 15%;
+   padding: 10px;
+   /*border: 1px solid white;*/
+   color: rgb(30, 229, 233, 0.7);
+   font-family: 'Jost', Arial, serif;
+   text-shadow: 10px 10px 10px rgb(0, 0, 5);
+   background-color: rgb(10, 10, 65);
+   text-align: justify;
+}
+
+section h2{
+    display: relative;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+section p{
+    font-size: 20px;
+    font-weight: 100;
 }
