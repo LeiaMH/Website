@@ -6,13 +6,14 @@
     <!--Local Links-->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="aboutpage" type="text/html" href="about.html">
-    <!--Fonts-->
+    <!--Fonts/Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/115e3f5e1b.js" crossorigin="anonymous"></script>
     <title>Website</title> 
 </head>
 
 <body>
-
+<main class="main">
 <!--Header-->  
   <header>
     <h1><button onclick="lightSwitch()" id="name">_Leia Hopf_</button></h1>
@@ -22,13 +23,23 @@
 <!--Navbar-->    
   <section class="navbar">
     <ul>
+      <li><a href="Website.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a>Research</a></li>
       <li><a>Projects</a></li>
-      <li><a>Contacts</a></li>
     </ul>
   </section>
-  
+</main>
+<!--Footer-->
+<section class="footer">
+<div class="contacts-list">
+  <ul>
+    <li><a id="email-link" href="mailto:leiahopf@googlemail.com"<i class="fas fa-envelope"></i></a></li>
+    <li><a id="profile-link" href="https://github.com/LeiaMH" target="_blank" <i class="fab fa-github"></i></a></li>
+    <li><a id="UoB-link"  href="http://www.bristol.ac.uk/school-of-arts/people/leia-m-hopf/overview.html" target="_blank"<i class="fas fa-graduation-cap"></i></a></li>
+  </ul>
+</div>
+</section>
 <script src="main.js"></script>
 </body>
 </html>
