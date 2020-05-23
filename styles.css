@@ -96,6 +96,15 @@ section p{
     font-weight: 100;
 }
 
+.pink-link{
+    color: rgb(230, 100, 115);
+    text-decoration: none;
+}
+.pink-link:hover{
+    color: rgb(250, 0, 115);
+    text-shadow: 4px 4px 5px rgb(250, 0, 115);
+}
+
 /*Footer*/
 .main{
     height: 100vh;
