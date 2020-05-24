@@ -105,6 +105,25 @@ section p{
     text-shadow: 4px 4px 5px rgb(250, 0, 115);
 }
 
+/*Projects*/
+section div.projects-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+section div div.project{
+    content: '';
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    border: 1px solid rgb(30, 229, 233);
+    border-radius: 5px;
+}
+section div div.project:hover{
+    box-shadow: 0px 0px 15px rgb(30, 229, 233);
+}
+
 /*Footer*/
 .main{
     height: 100vh;
