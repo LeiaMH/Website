@@ -1,17 +1,17 @@
-//1. Check local storage and set class to saved status. 
+//On load check local storage and set element class to saved class. 
 let elementToToggle = document.getElementById("name");
 let currentToggleClass = elementToToggle.classList;
 let storedToggleClass = localStorage.getItem('toggleStatus');
 
 function setToStoredToggleClass() {
-   if (storedToggleClass == 'offstyle') {
+   if (storedToggleClass === 'offstyle') {
       elementToToggle.className = 'offstyle';
-   } else if (storedToggleClass == 'onstyle') {
+   } else if (storedToggleClass === 'onstyle') {
       elementToToggle.className = 'onstyle'
    };
 };
 
-//2. On click run lightToggle().
+//On click toggle light-on/light-off on element.
 elementToToggle.addEventListener('click', function() {
    if (currentToggleClass == 'offstyle') {
       elementToToggle.className = 'onstyle';
@@ -19,7 +19,7 @@ elementToToggle.addEventListener('click', function() {
       elementToToggle.className = 'offstyle';
    };
 
-   //3. Update toggleStatus.
+   // Update toggleStatus.
    let newClass = elementToToggle.className;
    localStorage.setItem('toggleStatus', newClass);
 })
