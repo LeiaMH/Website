@@ -23,7 +23,6 @@ cursor: help;
     text-shadow: 4px 4px 10px rgb(30, 229, 233);
 }
 header{
-    display: fixed;
     padding-left: 20px;
 }
 header h1{
@@ -147,4 +146,30 @@ section div ul{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+}
+
+/* Media Queries*/
+@media only screen and (max-width: 1000px) {
+  
+    .navbar{
+    width: 150px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  
+  section.navbar{
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    
+    section.navbar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    section.navbar ul li{
+        padding: 0px;
+    }
 }
