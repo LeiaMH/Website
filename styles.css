@@ -13,6 +13,7 @@ background-color: rgb(10, 10, 65);
 border: none;
 cursor: help;
 }
+
 header h1 button:focus{ 
     outline: none; 
 }
@@ -147,9 +148,9 @@ button#contacts-button{
     border: none;
     cursor: pointer;
     margin: 10px;
-    /*position: relative;
-    top: 55vh;
-    left: 11vw;*/
+    position: fixed;
+    bottom: 3vh;
+    left: 0;
 }
 button#contacts-button:focus{ 
     outline: none; 
