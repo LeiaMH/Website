@@ -1,5 +1,5 @@
 //On load check local storage and set element class to saved class. 
-let elementToToggle = document.getElementById("name");
+const elementToToggle = document.getElementById("name");
 let currentToggleClass = elementToToggle.classList;
 let storedToggleClass = localStorage.getItem('toggleStatus');
 
@@ -23,3 +23,9 @@ elementToToggle.addEventListener('click', function() {
    let newClass = elementToToggle.className;
    localStorage.setItem('toggleStatus', newClass);
 })
+
+//Contact section toggle.
+
+function toggleContacts(){
+   document.getElementById('footer').classList.toggle("active");
+}
