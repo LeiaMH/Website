@@ -138,9 +138,6 @@ section div div.project:hover{
 }
 
 /*5. Footer*/
-main{
-    position: absolute;
-}
 button#contacts-button{
     color: rgb(30, 229, 233, 0.7);
     font-size: 1.5em;
@@ -151,6 +148,7 @@ button#contacts-button{
     position: fixed;
     bottom: 3vh;
     left: 0;
+    z-index: 999;
 }
 button#contacts-button:focus{ 
     outline: none; 
@@ -160,10 +158,11 @@ button#contacts-button:hover{
     text-shadow: 4px 4px 5px rgb(30, 229, 233);
 }
 section.footer{
+    background-image: linear-gradient(to top, rgba(10, 10, 65, 1), rgba(10, 10, 65, 1), rgba(10, 10, 65, 0));
     position: fixed;
     bottom: 0;
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     display: block;
     bottom: -200px;
     transition: all 500ms linear;
@@ -189,6 +188,10 @@ section div ul li a{
     color: rgb(30, 229, 233, 0.7);
     font-family: 'Jost',Arial, serif;
     text-decoration: none;
+}
+section div ul li a:hover{
+    color: rgb(30, 229, 233);
+    text-shadow: 4px 4px 5px rgb(30, 229, 233);
 }
 section div ul li{
     list-style: none;
@@ -220,17 +223,35 @@ section.footer div.copyright p{
 
 @media only screen and (max-width: 700px) {
   
-  section.navbar{
-        position: static;
-        width: auto;
-        height: auto;
+ header{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ header h1 button{
+    padding: 0;
+ }
+ header h2{
+    left:0;
+    bottom:0;
+ }
+
+ section.navbar{
+    position: static;
+    width: auto;
+    height: auto;
     }
-  section.navbar ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+ section.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     }
-   section.navbar ul li{
-        padding: 0px;
+ section.navbar ul li{
+    padding: 0px;
+    }
+
+section.main-content{
+    margin: 6vh 20%;
     }
 }
