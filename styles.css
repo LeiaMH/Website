@@ -105,7 +105,7 @@ section h2{
 /*Section Content*/
 section p{
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .pink-link{
@@ -125,16 +125,41 @@ flex-wrap: wrap;
 justify-content: center;
 }
 section div div.project{
+    position: relative;
+    align-items: center;
     content: '';
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 15px;
     border: 1px solid rgb(30, 229, 233);
     border-radius: 5px;
     cursor: pointer;
 }
+section div div.project img{
+    width: inherit;
+    height: inherit;
+}
 section div div.project:hover{
-    box-shadow: 0px 0px 15px rgb(30, 229, 233);
+    box-shadow: 0px 0px 25px rgb(30, 229, 233);
+}
+section div.project a:visited{
+    color: rgb(10, 10, 65);
+}
+section div div.project span{
+    color: rgb(10, 10, 65);
+    position: absolute;
+    top: 70%;
+    padding: 5px;
+    background-color: rgba(30, 229, 233, 0.65);
+    box-shadow: 4px 4px 8px rgb(0, 0, 5, 0.5);
+    text-shadow: none;
+    border: 1px solid none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Jost', Arial, serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    z-index: 5;
 }
 
 /*5. Footer*/

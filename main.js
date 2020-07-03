@@ -25,7 +25,6 @@ elementToToggle.addEventListener('click', function() {
 })
 
 //Contact section toggle.
-
 function toggleContacts(){
    document.getElementById('footer').classList.toggle("active");
 }
