@@ -55,7 +55,7 @@ header h2{
 .navbar{
     position: fixed;
     width: 200px;
-    z-index: 1;
+    z-index: 8;
     top: 0;
     right: 0;
     height: 100%;
@@ -173,7 +173,7 @@ button#contacts-button{
     position: fixed;
     bottom: 3vh;
     left: 0;
-    z-index: 999;
+    z-index: 5;
 }
 button#contacts-button:focus{ 
     outline: none; 
