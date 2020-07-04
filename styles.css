@@ -159,7 +159,7 @@ section div div.project span{
     font-family: 'Jost', Arial, serif;
     font-weight: 400;
     letter-spacing: 0.1em;
-    z-index: 5;
+    z-index: 2;
 }
 
 /*5. Footer*/
@@ -191,6 +191,7 @@ section.footer{
     display: block;
     bottom: -200px;
     transition: all 500ms linear;
+    z-index: 5;
 }
 section.active{
     bottom: 0px;
